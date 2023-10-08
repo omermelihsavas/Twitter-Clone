@@ -1,3 +1,5 @@
+import store from "~/store";
+
 export const sidebarMenu = [
     {
         path: '/',
@@ -133,7 +135,9 @@ export const sidebarMenu = [
         }
     },
     {
-        path: 'profile',
+        path: () => {
+            return `${store.getState()?.auth?.currentAccount?.username}`
+        },
         title: 'Profil',
         icon: {
             active: (

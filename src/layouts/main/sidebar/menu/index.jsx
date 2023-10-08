@@ -3,12 +3,15 @@ import classNames from "classnames";
 import { sidebarMenu } from "~/utils/consts";
 import More from "./more";
 import Send from "./send";
+import { useCurrentAccount } from "~/store/auth/hooks";
 
 export default function Menu() {
+    const account = useCurrentAccount();
+
     return (
-        <nav className="mt-0.5 mb-1">
+        <nav className="mt-0.5 mb-1" key={account}>
             {sidebarMenu.map((menu, index) => (
-                <NavLink to={menu.path} className="block group">
+                <NavLink key={index} to={typeof menu.path === 'function' ? menu.path() : menu.path} className="block group">
                     {({ isActive }) => (
                         <div className={classNames("p-3 rounded-full inline-flex items-center gap-5 group-hover:bg-[#eff3f41a] transition-colors", {
                             "font-bold": isActive
@@ -29,7 +32,6 @@ export default function Menu() {
             ))}
 
             <More />
-
             <Send />
         </nav>
     )
