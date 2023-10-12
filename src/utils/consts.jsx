@@ -159,3 +159,85 @@ export const sidebarMenu = [
         }
     }
 ]
+
+export const topics = [
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'tag',
+            value: 'Topic1'
+        }
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'query',
+            value: 'Topic2'
+        },
+        postCount: 12345
+    }
+]
